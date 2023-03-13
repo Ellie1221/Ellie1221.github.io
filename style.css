@@ -1,0 +1,392 @@
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'BookkMyungjo-Bd';
+}
+
+body {
+    background-color: #ededede4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#copyright {
+    font-size: 15%;
+    margin-top: 80px;
+}
+
+.sidebar {
+    box-shadow: 3px 3px 3px rgb(162, 161, 161);
+}
+
+.mainbox h1 {
+    color: #2B3467;
+}
+
+#introduceImg {
+    position: relative;
+    top: 15%;
+    left: 15%;
+    display: inline-block;
+}
+
+#introduceImg img {
+    width: 25%;
+    height: 30%;
+    border-radius: 20px;
+    border: 1px solid rgb(186, 186, 201);
+
+}
+
+#introduceInfo {
+    position: relative;
+    left: 40%;
+    bottom: 38%;
+    font-size: 100%;
+}
+
+@media all and (max-width: 768px) {
+
+    /* //브라우저 창 width가 768px보다 작아지는 순간부터 적용
+    //모바일 */
+    .content {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .sidebar {
+        display: none;
+        float: left;
+        width: 70%;
+        height: 100%;
+        background-color: #F5F5F5;
+        position: fixed;
+        z-index: 9999;
+        border-radius: 0 15px 15px 0;
+        overflow: scroll;
+    }
+
+    #name {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .menu img {
+        width: 7%;
+        height: 7%;
+    }
+
+    .img {
+        margin: 7%;
+        text-align: center;
+    }
+
+    #myphoto {
+        width: 65%;
+        height: 72%;
+        border-radius: 50%;
+        margin: 5% 0;
+
+    }
+
+    .menu div {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .menu span {
+        margin-left: 5%;
+    }
+
+    .sns {
+        text-align: center;
+        height: 40px;
+        margin: 10px 0;
+
+    }
+
+    .sns img {
+        width: 17px;
+        height: 17px;
+        padding: 5px 0 0 0;
+    }
+
+    .snsmini {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #E8E2E2;
+        width: 27px;
+        height: 27px;
+    }
+
+    #menuIcon {
+        display: inline-block;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    .mainbox h1 {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        font-size: 100%;
+        text-shadow: 2px 2px 2px rgb(153, 152, 152);
+    }
+
+    .mainbox {
+        height: 100%;
+    }
+}
+
+@media all and (min-width: 768px) {
+
+    /* //브라우저 창 width가 768px보다 커지는 순간부터 적용
+    //태블릿 */
+    .sidebar {
+        display: none;
+        position: fixed;
+        float: left;
+        width: 25%;
+        height: 100%;
+        background-color: #F5F5F5;
+        z-index: 9999;
+        overflow: scroll;
+        border-radius: 0 15px 15px 0;
+    }
+
+    #name {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .content {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .menu img {
+        width: 7%;
+        height: 7%;
+    }
+
+    .img {
+        margin: 7%;
+        text-align: center;
+    }
+
+    #myphoto {
+        width: 65%;
+        height: 72%;
+        border-radius: 50%;
+        margin: 5% 0;
+
+    }
+
+    .menu div {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .menu span {
+        margin-left: 5%;
+    }
+
+    .sns {
+        text-align: center;
+        height: 40px;
+        margin: 30px 0;
+
+    }
+
+    .sns img {
+        width: 17px;
+        height: 17px;
+        padding: 5px 0 0 0;
+    }
+
+    .snsmini {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #E8E2E2;
+        width: 27px;
+        height: 27px;
+    }
+
+
+    #menuIcon {
+        display: inline-block;
+        z-index: 1;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        right: 0;
+        padding: 10px;
+    }
+
+    .mainbox h1 {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        font-size: 100%;
+        text-shadow: 2px 2px 2px rgb(153, 152, 152);
+    }
+
+    .mainbox {
+        height: 100%;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+
+    /* //브라우저 창 width가 1024px보다 커지는 순간부터 적용
+    //데스크탑 */
+    .content {
+        display: inline-block;
+        width: 86%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .sidebar {
+        display: block;
+        float: left;
+        width: 15%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #F5F5F5;
+        position: fixed;
+        z-index: 9999;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .menu img {
+        width: 7%;
+        height: 7%;
+    }
+
+    .img {
+        margin: 7%;
+        text-align: center;
+    }
+
+    #myphoto {
+        width: 65%;
+        height: 72%;
+        border-radius: 50%;
+        margin: 5% 0;
+
+    }
+
+    .sns {
+        text-align: center;
+        height: 30px;
+    }
+
+    .sns img {
+        width: 20px;
+        height: 20px;
+        padding: 5px 0 0 0;
+    }
+
+    .snsmini {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #E8E2E2;
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu div {
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .menu span {
+        margin-left: 5%;
+    }
+
+    #name {
+        text-align: center;
+        font-size: 16px;
+        text-shadow: 2px 2px 2px rgb(181, 179, 179);
+    }
+
+    #menuIcon {
+        display: none;
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    .mainbox h1 {
+        position: relative;
+        font-size: 30px;
+        top: 50px;
+        left: 80px;
+        text-shadow: 2px 2px 2px rgb(153, 152, 152);
+    }
+
+    .mainbox {
+        height: 100%;
+    }
+
+    .box {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+        
+    }
+
+    #introduceImg {
+        display: inline;
+        position: absolute;
+        top:117%;
+        left: 20%;
+    }
+
+    #introduceImg img{
+        
+        width: 22%;
+        
+    }
+    #introduceInfo {
+        width: 40%;
+        position: absolute;
+        top:118%;
+        left: 43%;
+    }
+    #introduceInfo span:nth-of-type(1){
+        font-size: 190%;
+    }
+    #introduceInfo h4{
+        margin: 5% 0;
+    }
+}
