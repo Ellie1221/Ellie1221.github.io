@@ -32,7 +32,11 @@ a {
 .mainbox h1 {
     color: #2B3467;
 }
-
+#homeBox{
+    background-image: url(images/KakaoTalk_20230313_231907648.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 #introduceImg {
     position: relative;
     top: 15%;
@@ -389,4 +393,5 @@ a {
     #introduceInfo h4{
         margin: 5% 0;
     }
+  
 }
